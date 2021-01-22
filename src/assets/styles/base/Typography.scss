@@ -1,0 +1,16 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font: inherit;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
