@@ -17,6 +17,7 @@
       font-size: rem(16);
       line-height: rem(16);
       margin-bottom: rem(7);
+      font-weight: var(--f-medium);
     }
 
     &_total {
@@ -31,4 +32,5 @@
 .section-name {
   font-size: rem(16);
   line-height: rem(19);
+  font-weight: var(--f-medium);
 }

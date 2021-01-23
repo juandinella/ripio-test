@@ -37,14 +37,18 @@ module.exports = {
       ],
       },
       {
-      test: /\.(png|jpg|gif|svg)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: { name: 'assets/images/[hash].[ext]' },
-        }
-      ],
-    },
+        test: /\.(png|jpg|gif|)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { name: 'assets/images/[hash].[ext]' },
+          }
+        ],
+      },
+      {
+        test: /\.svg$/,
+        loader: 'raw-loader'
+      },
     ],
   },
   plugins: [

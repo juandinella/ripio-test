@@ -12,13 +12,35 @@
   &-header {
     margin-bottom: rem(35);
 
-    img {
-      margin-right: rem(12);
-    }
-
     h1 {
       font-size: rem(18);
       line-height: rem(21);
+    }
+
+    &_logo {
+      width: rem(56);
+      height: rem(56);
+      background-color: #f4ecfe;
+      border-radius: 100%;
+      margin-right: rem(12);
+      position: relative;
+
+      span {
+        height: rem(18);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: -3px;
+        border-radius: 100%;
+        background: linear-gradient(90deg, #ff08d7 0%, #8b43e0 100%);
+        z-index: -1;
+      }
     }
   }
 
@@ -29,15 +51,37 @@
     display: block;
     transition: color 0.225s ease;
     width: 100%;
+    font-weight: var(--f-medium);
 
     &:hover {
       color: var(--primary-color);
     }
 
-    &.is-selected {
+    &_icon {
+      margin-right: rem(12);
+    }
+
+    &.is-active {
       box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
       border-radius: rem(45);
       color: var(--primary-color);
+
+      .sidebar-item_icon path {
+        fill: var(--primary-color);
+      }
+    }
+  }
+
+  &-products {
+    margin-top: rem(64);
+
+    &_title {
+      text-transform: uppercase;
+      font-size: rem(12);
+      line-height: rem(20);
+      margin-left: rem(20);
+      font-weight: var(--f-bold);
+      color: #d8d9e2;
     }
   }
 }
