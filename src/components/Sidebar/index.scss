@@ -1,5 +1,7 @@
+@import '../../assets/styles/abstract/Functions.scss';
+
 .sidebar {
-  width: 280px;
+  width: rem(280);
   border-right: 1px solid #d8d9e2;
   float: left;
   height: 100vh;
@@ -7,12 +9,26 @@
   overflow-y: scroll;
   padding: rem(32) rem(24) rem(24) rem(24);
 
+  &-header {
+    margin-bottom: rem(35);
+
+    img {
+      margin-right: rem(12);
+    }
+
+    h1 {
+      font-size: rem(18);
+      line-height: rem(21);
+    }
+  }
+
   &-item {
     font-size: rem(16);
     color: var(--gray-medium);
-    padding: 15px 22px;
+    padding: rem(15) rem(22);
     display: block;
     transition: color 0.225s ease;
+    width: 100%;
 
     &:hover {
       color: var(--primary-color);
@@ -20,7 +36,7 @@
 
     &.is-selected {
       box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-      border-radius: 45;
+      border-radius: rem(45);
       color: var(--primary-color);
     }
   }

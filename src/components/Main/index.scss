@@ -1,4 +1,9 @@
+@import '../../assets/styles/abstract/Functions.scss';
+
 .main {
   float: right;
   width: calc(100% - 280px);
+  background-color: var(--background-color);
+  min-height: 100vh;
+  padding: rem(32);
 }

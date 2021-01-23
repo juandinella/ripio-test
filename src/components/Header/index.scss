@@ -1,0 +1,34 @@
+@import '../../assets/styles/abstract/Functions.scss';
+
+.header {
+  padding: rem(24) rem(32) rem(14) rem(32);
+  background-color: var(--white);
+  width: calc(100% - 280px);
+  float: right;
+  border-bottom: 1px solid #d8d9e2;
+
+  &-top {
+    margin-bottom: rem(35);
+  }
+
+  &-balance {
+    &_label {
+      color: var(--gray-medium);
+      font-size: rem(16);
+      line-height: rem(16);
+      margin-bottom: rem(7);
+    }
+
+    &_total {
+      font-weight: var(--f-bold);
+      font-size: rem(32);
+      line-height: rem(38);
+      margin-right: rem(8);
+    }
+  }
+}
+
+.section-name {
+  font-size: rem(16);
+  line-height: rem(19);
+}

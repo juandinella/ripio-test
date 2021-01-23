@@ -1,8 +1,18 @@
 @import './abstract/Index.scss';
 @import './base/Index.scss';
+@import './layout/Index.scss';
 
 .icon {
   width: 90px;
   height: 90px;
   padding: 10px;
+}
+
+.tag {
+  color: var(--primary-color);
+  font-size: rem(12);
+  line-height: rem(14);
+  padding: rem(6) rem(14);
+  background-color: var(--secondary-color);
+  border-radius: rem(30);
 }
