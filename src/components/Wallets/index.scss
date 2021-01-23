@@ -1,0 +1,97 @@
+@import '../../assets/styles/abstract/Functions.scss';
+
+.wallets {
+  padding-right: rem(24);
+}
+
+.table {
+  margin-top: rem(36);
+
+  &-header {
+    margin-bottom: rem(18);
+    padding: 0 rem(24) 0 rem(36);
+
+    &_item {
+      flex: 1;
+      color: var(--gray-medium);
+      font-size: rem(16);
+      line-height: rem(19);
+    }
+  }
+
+  &-row {
+    background-color: var(--white);
+    padding: rem(14) rem(24) rem(14) rem(36);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: rem(6);
+    margin-bottom: rem(8);
+
+    &_item {
+      flex: 1;
+    }
+
+    .wallet-balance {
+      font-weight: var(--f-bold);
+    }
+
+    .wallet-equivalent {
+      text-align: right;
+      padding-right: 8%;
+    }
+
+    .wallet-percentage {
+      text-align: center;
+    }
+  }
+}
+
+.currency-icon {
+  width: rem(45);
+  height: rem(45);
+  border-radius: 100%;
+  margin-right: rem(16);
+
+  &--ars {
+    background-color: var(--ars);
+  }
+  &--btc {
+    background-color: var(--btc);
+  }
+  &--eth {
+    background-color: var(--eth);
+  }
+  &--usdc {
+    background-color: var(--usdc);
+  }
+  &--dai {
+    background-color: var(--dai);
+  }
+  &--ltc {
+    background-color: var(--ltc);
+  }
+}
+
+.wallet-id {
+  max-width: rem(40);
+  color: var(--gray-medium);
+}
+
+.wallet-currency {
+  max-width: 25%;
+}
+
+.wallet-balance {
+  max-width: 16%;
+}
+
+.wallet-equivalent {
+  max-width: 16%;
+}
+
+.wallet-percentage {
+  max-width: 16%;
+}
+
+.wallet-action {
+  max-width: rem(146);
+}

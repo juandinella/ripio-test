@@ -33,4 +33,11 @@
     min-width: rem(186);
     height: rem(44);
   }
+
+  &--small {
+    height: rem(42);
+    font-size: rem(15);
+    line-height: rem(15);
+    max-width: rem(146);
+  }
 }
