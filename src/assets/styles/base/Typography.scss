@@ -1,6 +1,11 @@
 html {
   min-height: 100%;
   position: relative;
+  font-family: var(--system-fonts);
+
+  &.wf-active {
+    font-family: var(--font);
+  }
 }
 
 body {
@@ -13,4 +18,9 @@ body {
 input,
 textarea {
   font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

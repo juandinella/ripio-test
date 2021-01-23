@@ -1,5 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
+import App from './App';
+import WebFont from 'webfontloader';
 
-ReactDOM.render(<App />, document.getElementById('app'))
+WebFont.load({
+  google: {
+    families: ['Lato:,400,700', 'sans-serif']
+  }
+});
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
+);
