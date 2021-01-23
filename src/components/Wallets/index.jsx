@@ -14,8 +14,8 @@ const Wallets = () => (
   <div className="wallets">
     <h2>Billeteras</h2>
     <div className="table">
-      <div className="table-header flex justify-between">
-        <div className="table-header_item wallet-id">#</div>
+      <div className="table-header dn flex-sm justify-between">
+        <div className="table-header_item wallet-id dn db-sm">#</div>
         <div className="table-header_item wallet-currency">Moneda</div>
         <div className="table-header_item wallet-balance">Balance</div>
         <div className="table-header_item wallet-equivalent">Equivalente</div>
@@ -23,22 +23,22 @@ const Wallets = () => (
         <div className="table-header_item wallet-action"></div>
       </div>
       <div className="table-row flex align-center justify-between">
-        <div className="table-row_item wallet-id">-</div>
-        <div className="table-row_item flex align-center wallet-currency">
-          <SVG svg={ ars } className='currency-icon currency-icon--ars flex align-center justify-center' />
+        <div className="table-row_item wallet-id dn db-sm">-</div>
+        <div data-title='Moneda' className="table-row_item flex align-center wallet-currency">
+          <SVG svg={ ars } className='dn currency-icon currency-icon--ars flex-sm align-center justify-center' />
           <span>Pesos - ARS</span>
         </div>
-        <div className="table-row_item wallet-balance">$0</div>
-        <div className="table-row_item wallet-equivalent">-</div>
-        <div className="table-row_item wallet-percentage">0%</div>
+        <div data-title='Balance' className="table-row_item wallet-balance">$0</div>
+        <div data-title='Equivalente' className="table-row_item wallet-equivalent">-</div>
+        <div data-title='Porcentaje' className="table-row_item wallet-percentage">0%</div>
         <div className="table-row_item wallet-action">
           <Button link='/' variant='btn--secondary' size='btn--small'>Depositar</Button>
         </div>
       </div>
       <div className="table-row flex align-center justify-between">
-        <div className="table-row_item wallet-id"></div>
+        <div className="table-row_item wallet-id dn db-sm"></div>
         <div className="table-row_item flex align-center wallet-currency">
-          <SVG svg={ btc } className='currency-icon currency-icon--btc flex align-center justify-center' />
+          <SVG svg={ btc } className='dn currency-icon currency-icon--btc flex-sm align-center justify-center' />
           <span>Bitcoin - BTC</span>
         </div>
         <div className="table-row_item wallet-balance">0 BTC</div>
@@ -50,9 +50,9 @@ const Wallets = () => (
       </div>
 
       <div className="table-row flex align-center justify-between">
-        <div className="table-row_item wallet-id"></div>
+        <div className="table-row_item wallet-id dn db-sm"></div>
         <div className="table-row_item flex align-center wallet-currency">
-          <SVG svg={ eth } className='currency-icon currency-icon--eth flex align-center justify-center' />
+          <SVG svg={ eth } className='dn currency-icon currency-icon--eth flex-sm align-center justify-center' />
           <span>Ethereum - ETH </span>
         </div>
         <div className="table-row_item wallet-balance">0 ETH</div>
@@ -64,9 +64,9 @@ const Wallets = () => (
       </div>
 
       <div className="table-row flex align-center justify-between">
-        <div className="table-row_item wallet-id"></div>
+        <div className="table-row_item wallet-id dn db-sm"></div>
         <div className="table-row_item flex align-center wallet-currency">
-          <SVG svg={ usdc } className='currency-icon currency-icon--usdc flex align-center justify-center' />
+          <SVG svg={ usdc } className='dn currency-icon currency-icon--usdc flex-sm align-center justify-center' />
           <span>USD Coin - USDC</span>
         </div>
         <div className="table-row_item wallet-balance">0 USDC</div>
@@ -78,9 +78,9 @@ const Wallets = () => (
       </div>
 
       <div className="table-row flex align-center justify-between">
-        <div className="table-row_item wallet-id"></div>
+        <div className="table-row_item wallet-id dn db-sm"></div>
         <div className="table-row_item flex align-center wallet-currency">
-          <SVG svg={ dai } className='currency-icon currency-icon--dai flex align-center justify-center' />
+          <SVG svg={ dai } className='dn currency-icon currency-icon--dai flex-sm align-center justify-center' />
           <span>Dai - DAI</span>
         </div>
         <div className="table-row_item wallet-balance">0 DAI</div>
@@ -92,9 +92,9 @@ const Wallets = () => (
       </div>
 
       <div className="table-row flex align-center justify-between">
-        <div className="table-row_item wallet-id"></div>
+        <div className="table-row_item wallet-id dn db-sm"></div>
         <div className="table-row_item flex align-center wallet-currency">
-          <SVG svg={ ltc } className='currency-icon currency-icon--ltc flex align-center justify-center' />
+          <SVG svg={ ltc } className='dn currency-icon currency-icon--ltc flex-sm align-center justify-center' />
           <span>Litecoin - LTC</span>
         </div>
         <div className="table-row_item wallet-balance">0.0000 LTC</div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.scss';
 
-const RateCard = ({ price}) => (
+const RateCard = ({ buy_rate }) => (
   <div className="rateCard">
-    <div>{price}</div>
+    <div className='rateCard-amount'>{buy_rate}</div>
   </div>
 );
 

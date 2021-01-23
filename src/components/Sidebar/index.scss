@@ -3,7 +3,7 @@
 @import '../../assets/styles/abstract/Mixins.scss';
 
 .sidebar {
-  width: rem(280);
+  width: 100%;
   border-right: 1px solid #d8d9e2;
   float: left;
   height: 100vh;
@@ -12,9 +12,12 @@
   padding: rem(32) rem(24) rem(24) rem(24);
   background-color: var(--white);
   transform: translateX(-100%);
+  top: rem(60);
 
   @include breakpoint(md) {
     transform: none;
+    top: 0;
+    width: rem(280);
   }
 
   &-header {
