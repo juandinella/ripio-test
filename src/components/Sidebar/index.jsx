@@ -24,31 +24,31 @@ const Sidebar = () => (
     <nav>
       <ul>
         <li className='flex align-center'>
-          <a className='sidebar-item is-active flex' href="">
+          <a className='sidebar-item is-active flex' href="/">
             <SVG svg={ inicio } className='sidebar-item_icon flex align-center' />
             <span>Panel</span>
           </a>
         </li>
         <li className='flex align-center'>
-          <a className='sidebar-item flex' href="">
+          <a className='sidebar-item flex' href="/">
             <SVG svg={ wallet } className='sidebar-item_icon flex align-center' />
             <span>Cotizaciones</span>
           </a>
         </li>
         <li className='flex align-center'>
-          <a className='sidebar-item flex' href="">
+          <a className='sidebar-item flex' href="/">
             <SVG svg={ launchpad } className='sidebar-item_icon flex align-center' />
             <span>Launchpad</span>
           </a>
         </li>
         <li className='flex align-center'>
-          <a className='sidebar-item flex' href="">
+          <a className='sidebar-item flex' href="/">
             <SVG svg={ referidos } className='sidebar-item_icon flex align-center' />
             <span>Referidos</span>
           </a>
         </li>
         <li className='flex align-center'>
-          <a className='sidebar-item flex' href="">
+          <a className='sidebar-item flex' href="/">
             <SVG svg={ config } className='sidebar-item_icon flex align-center' />
             <span>Configuración</span>
           </a>
@@ -59,18 +59,18 @@ const Sidebar = () => (
         <div className='sidebar-products_title'>Productos</div>
       <ul>
         <li className='flex align-center'>
-          <a className='sidebar-item flex' href="">
+          <a className='sidebar-item flex' href="/">
             <SVG svg={ exchange } className='sidebar-item_icon flex align-center' />
             <span>Exchange</span>
           </a>
         </li>
         <li className='flex align-center'>
-          <a className='sidebar-item flex' href="">
+          <a className='sidebar-item flex' href="/">
             <SVG svg={ inversiones } className='sidebar-item_icon flex align-center' />
             <span>Inversiones</span></a><span className="tag">Nuevo!</span>
         </li>
         <li className='flex align-center'>
-          <a className='sidebar-item flex' href="">
+          <a className='sidebar-item flex' href="/">
             <SVG svg={ creditos } className='sidebar-item_icon flex align-center' />
             <span>Créditos</span>
           </a>
