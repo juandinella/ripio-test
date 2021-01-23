@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 import Rates from '../Rates'
+import RateCard from '../RateCard'
 import Wallets from "../Wallets";
 
-const Main = () => (
-  <main className="main">
-    <Rates/>
-    <Wallets />
-  </main>
-);
-
+const Main = () => {
+  return (
+    <main className="main">
+      <Wallets />
+    </main>
+  );
+}
 export default Main

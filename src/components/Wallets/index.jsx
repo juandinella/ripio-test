@@ -104,8 +104,6 @@ const Wallets = () => (
           <Button link='/' variant='btn--primary' size='btn--small'>Comprar</Button>
         </div>
       </div>
-
-
     </div>
   </div>
 );

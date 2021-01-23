@@ -46,8 +46,8 @@
 }
 
 .currency-icon {
-  width: rem(45);
-  height: rem(45);
+  min-width: rem(45);
+  min-height: rem(45);
   border-radius: 100%;
   margin-right: rem(16);
 

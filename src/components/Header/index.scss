@@ -19,6 +19,14 @@
   }
 
   &-balance {
+    margin-bottom: rem(24);
+    text-align: center;
+
+    @include breakpoint(sm) {
+      margin-bottom: 0;
+      text-align: left;
+    }
+
     &_label {
       color: var(--gray-medium);
       font-size: rem(16);
@@ -81,10 +89,29 @@
     padding-bottom: 0;
     border-radius: rem(20);
     background-color: var(--black);
+    transform-style: preserve-3d;
+    transition: all 0.225s ease;
 
     &:nth-child(2) {
       margin-top: rem(4);
       margin-bottom: rem(4);
+    }
+  }
+
+  &.is-open {
+    .menu-toggle_line {
+      &:first-of-type {
+        transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+          rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-of-type {
+        transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+          rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+      }
     }
   }
 }
