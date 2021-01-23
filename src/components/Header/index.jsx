@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import Button from '../Button'
 import SVG from 'react-svg-inline';
 import bell from '../Icons/bell.svg';
 import help from '../Icons/help.svg';
@@ -23,11 +24,15 @@ const Header = () => (
         <a href="" className="header-help"><SVG svg={ help } /></a>
       </div>
     </div>
-    <div className='flex justify-between'>
+    <div className='flex justify-between align-end'>
       <div className='header-balance'>
         <div className="header-balance_label">Balance total</div>
         <div className="header-balance_total dib">$0</div>
         <a href="/" className="link">Ver detalle</a>
+      </div>
+      <div className="header-buttons flex">
+        <Button link='/' variant='btn--primary' size='btn--big'>Depositar</Button>
+        <Button link='/' variant='btn--secondary' size='btn--big'>Retirar</Button>
       </div>
     </div>
   </header>
