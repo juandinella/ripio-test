@@ -1,4 +1,6 @@
 @import '../../assets/styles/abstract/Functions.scss';
+@import '../../assets/styles/abstract/Breakpoints.scss';
+@import '../../assets/styles/abstract/Mixins.scss';
 
 .rates {
   overflow: hidden;
@@ -33,9 +35,13 @@
   background-color: var(--white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
   border-radius: rem(6);
-  margin-right: rem(32);
+  margin-right: rem(24);
   min-width: rem(250);
   min-height: rem(132);
+
+  @include breakpoint(sm) {
+    margin-right: rem(32);
+  }
 
   &_amount {
     font-weight: var(--f-medium);

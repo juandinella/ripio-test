@@ -24,7 +24,7 @@ const Header = () => {
             <div className="notification-dot absolute flex align-center justify-center">6</div>
             <SVG svg={ bell } className='notification' />
           </a>
-          <a href="" className="header-help"><SVG svg={ help } /></a>
+          <a href="/" className="header-help"><SVG svg={ help } /></a>
         </div>
       </div>
       <div className='db flex-sm justify-between align-end'>

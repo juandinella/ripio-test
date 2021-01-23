@@ -6,7 +6,11 @@
   float: none;
   width: 100%;
   background-color: var(--background-color);
-  padding: rem(32) 0 rem(32) rem(32);
+  padding: rem(24) 0 rem(24) rem(24);
+
+  @include breakpoint(sm) {
+    padding: rem(32) 0 rem(32) rem(32);
+  }
 
   @include breakpoint(md) {
     width: calc(100% - 280px);

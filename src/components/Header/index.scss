@@ -3,11 +3,15 @@
 @import '../../assets/styles/abstract/Mixins.scss';
 
 .header {
-  padding: rem(24) rem(32) rem(14) rem(32);
+  padding: rem(24) rem(24) rem(14) rem(24);
   background-color: var(--white);
   width: 100%;
   float: none;
   border-bottom: 1px solid #d8d9e2;
+
+  @include breakpoint(sm) {
+    padding: rem(24) rem(32) rem(14) rem(32);
+  }
 
   @include breakpoint(md) {
     width: calc(100% - 280px);
