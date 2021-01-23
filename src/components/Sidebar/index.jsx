@@ -13,7 +13,7 @@ import creditos from '../Icons/creditos.svg';
 
 
 const Sidebar = () => (
-  <aside className='sidebar'>
+  <aside className='sidebar fixed'>
     <div className="sidebar-header flex align-center">
       {/* <img src={logo} alt="Ripio Logo"/> */}
       <div className="sidebar-header_logo flex align-center justify-center">

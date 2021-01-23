@@ -31,3 +31,18 @@ a {
   font-size: rem(14);
   line-height: rem(20);
 }
+
+.tag {
+  color: var(--primary-color);
+  font-size: rem(12);
+  line-height: rem(14);
+  padding: rem(6) rem(14);
+  background-color: var(--secondary-color);
+  border-radius: rem(30);
+}
+
+h2 {
+  font-size: rem(24);
+  line-height: rem(28);
+  font-weight: var(--f-bold);
+}

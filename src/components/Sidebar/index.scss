@@ -1,4 +1,6 @@
 @import '../../assets/styles/abstract/Functions.scss';
+@import '../../assets/styles/abstract/Breakpoints.scss';
+@import '../../assets/styles/abstract/Mixins.scss';
 
 .sidebar {
   width: rem(280);
@@ -8,6 +10,12 @@
   overflow-x: hidden;
   overflow-y: scroll;
   padding: rem(32) rem(24) rem(24) rem(24);
+  background-color: var(--white);
+  transform: translateX(-100%);
+
+  @include breakpoint(md) {
+    transform: none;
+  }
 
   &-header {
     margin-bottom: rem(35);

@@ -1,14 +1,12 @@
 import React from 'react';
 import './index.scss';
+import cx from "classnames"
 
-const Button = () => (
-  <header className='header'>
-    <div className='header-top flex justify-between'>
-      <div className='section-name'>Panel</div>
-      <div className='header-icons'>A C</div>
-    </div>
-
-  </header>
+const Button = ({ className }) => {
+  <button
+    className={ cx({
+    [className]: className,
+  })
 );
 
 export default Button

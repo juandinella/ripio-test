@@ -1,8 +1,13 @@
 import React from 'react';
 import './index.scss';
+import Rates from '../Rates'
+import Wallets from "../Wallets";
 
 const Main = () => (
-  <main className="main"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, totam accusantium. Debitis, officiis. Architecto eligendi nemo maiores sed labore earum aperiam similique ducimus! Ullam accusantium pariatur, voluptatum voluptas nemo delectus.</p></main>
+  <main className="main">
+    <Rates/>
+    <Wallets />
+  </main>
 );
 
 export default Main

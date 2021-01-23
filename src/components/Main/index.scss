@@ -1,9 +1,15 @@
 @import '../../assets/styles/abstract/Functions.scss';
+@import '../../assets/styles/abstract/Breakpoints.scss';
+@import '../../assets/styles/abstract/Mixins.scss';
 
 .main {
-  float: right;
-  width: calc(100% - 280px);
+  float: none;
+  width: 100%;
   background-color: var(--background-color);
-  min-height: 100vh;
-  padding: rem(32);
+  padding: rem(32) 0 rem(32) rem(32);
+
+  @include breakpoint(md) {
+    width: calc(100% - 280px);
+    float: right;
+  }
 }
