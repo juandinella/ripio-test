@@ -9,7 +9,7 @@ WebFont.load({
   }
 });
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
     <App />

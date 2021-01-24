@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SVG from 'react-svg-inline';
 import {tickerToLogo, tickerToName} from '../../utils'
 import './index.scss';
@@ -20,4 +21,11 @@ const RateCard = ({ ticker, buy_rate, variation }) => {
     </div>
   );
 }
+
+RateCard.propTypes = {
+  ticker: PropTypes.string.isRequired,
+  buy_rate: PropTypes.string.isRequired,
+  variation: PropTypes.string.isRequired
+};
+
 export default RateCard

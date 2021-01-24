@@ -13,7 +13,6 @@ const Main = () => {
     .then(response => response.json())
     .then(data => setRates(data));
   }, [])
-  console.log(rates)
 
   return (
     <main className='main'>
