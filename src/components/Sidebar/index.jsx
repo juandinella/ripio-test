@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import classNames from "classnames"
+import classNames from 'classnames'
 import SVG from 'react-svg-inline';
 import logo from '../../assets/Icons/logo.svg';
 import inicio from '../../assets/Icons/inicio.svg';
@@ -19,8 +19,8 @@ const Sidebar = ({ openMenu, onClickOpenMenu }) => {
       className={classNames('sidebar fixed', openMenu ? 'is-open': '')}
       onClick={onClickOpenMenu}
     >
-      <div className="sidebar-header flex align-center">
-        <div className="sidebar-header_logo flex align-center justify-center">
+      <div className='sidebar-header flex align-center'>
+        <div className='sidebar-header_logo flex align-center justify-center'>
           <SVG svg={ logo } />
         </div>
         <h1>Hola, <br/>Juan Manuel!</h1>
@@ -28,31 +28,31 @@ const Sidebar = ({ openMenu, onClickOpenMenu }) => {
       <nav>
         <ul>
           <li className='flex align-center'>
-            <a className='sidebar-item is-active flex' href="/">
+            <a className='sidebar-item is-active flex' href='/'>
               <SVG svg={ inicio } className='sidebar-item_icon flex align-center' />
               <span>Panel</span>
             </a>
           </li>
           <li className='flex align-center'>
-            <a className='sidebar-item flex' href="/">
+            <a className='sidebar-item flex' href='/'>
               <SVG svg={ wallet } className='sidebar-item_icon flex align-center' />
               <span>Cotizaciones</span>
             </a>
           </li>
           <li className='flex align-center'>
-            <a className='sidebar-item flex' href="/">
+            <a className='sidebar-item flex' href='/'>
               <SVG svg={ launchpad } className='sidebar-item_icon flex align-center' />
               <span>Launchpad</span>
             </a>
           </li>
           <li className='flex align-center'>
-            <a className='sidebar-item flex' href="/">
+            <a className='sidebar-item flex' href='/'>
               <SVG svg={ referidos } className='sidebar-item_icon flex align-center' />
               <span>Referidos</span>
             </a>
           </li>
           <li className='flex align-center'>
-            <a className='sidebar-item flex' href="/">
+            <a className='sidebar-item flex' href='/'>
               <SVG svg={ config } className='sidebar-item_icon flex align-center' />
               <span>Configuración</span>
             </a>
@@ -63,18 +63,18 @@ const Sidebar = ({ openMenu, onClickOpenMenu }) => {
           <div className='sidebar-products_title'>Productos</div>
         <ul>
           <li className='flex align-center'>
-            <a className='sidebar-item flex' href="/">
+            <a className='sidebar-item flex' href='/'>
               <SVG svg={ exchange } className='sidebar-item_icon flex align-center' />
               <span>Exchange</span>
             </a>
           </li>
           <li className='flex align-center'>
-            <a className='sidebar-item flex' href="/">
+            <a className='sidebar-item flex' href='/'>
               <SVG svg={ inversiones } className='sidebar-item_icon flex align-center' />
-              <span>Inversiones</span></a><span className="tag">Nuevo!</span>
+              <span>Inversiones</span></a><span className='tag'>Nuevo!</span>
           </li>
           <li className='flex align-center'>
-            <a className='sidebar-item flex' href="/">
+            <a className='sidebar-item flex' href='/'>
               <SVG svg={ creditos } className='sidebar-item_icon flex align-center' />
               <span>Créditos</span>
             </a>

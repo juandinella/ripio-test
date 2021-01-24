@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.scss';
 import Rates from '../Rates'
 import RateCard from '../RateCard'
-import Wallets from "../Wallets";
+import Wallets from '../Wallets';
 
 const Main = () => {
   const [ rates, setRates ] = useState([]);
@@ -16,7 +16,7 @@ const Main = () => {
   console.log(rates)
 
   return (
-    <main className="main">
+    <main className='main'>
       <Rates>
         {rates
           .filter(item => TICKERS_TO_DISPLAY.includes(item.ticker))

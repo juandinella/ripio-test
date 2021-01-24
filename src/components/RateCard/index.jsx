@@ -6,9 +6,9 @@ import './index.scss';
 const RateCard = ({ ticker, buy_rate, variation }) => {
   const roundedBuyRate = parseFloat(buy_rate).toFixed(2);
   return (
-    <div className="rate-card flex flex-column justify-between">
+    <div className='rate-card flex flex-column justify-between'>
       <div>
-        <div className="flex align-center">
+        <div className='flex align-center'>
           <SVG svg={tickerToLogo[ticker]} />
           <div className='rate-card_ticker'>
             <span>{tickerToName[ticker]}</span>

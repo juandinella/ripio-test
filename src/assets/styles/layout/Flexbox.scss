@@ -100,5 +100,13 @@
     .align-start-#{$name} {
       align-items: flex-start;
     }
+
+    .justify-start-#{$name} {
+      justify-content: flex-start;
+    }
+
+    .justify-between-#{$name} {
+      justify-content: space-between;
+    }
   }
 }
