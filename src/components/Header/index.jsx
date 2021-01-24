@@ -26,8 +26,11 @@ const Header = ({ openMenu, onClickOpenMenu }) => {
           <a className='notification relative' href='/'>
             <div className='notification-dot absolute flex align-center justify-center'>6</div>
             <SVG svg={ bell } className='notification' />
+            <span className='visuallyHidden'>Notifications</span>
           </a>
-          <a href='/' className='header-help'><SVG svg={ help } /></a>
+          <a href='/' className='header-help'><SVG svg={ help } />
+          <span className='visuallyHidden'>Help</span>
+          </a>
         </div>
       </div>
       <div className='db flex-sm justify-between align-end'>
