@@ -11,13 +11,21 @@
   overflow-y: scroll;
   padding: rem(32) rem(24) rem(24) rem(24);
   background-color: var(--white);
-  transform: translateX(-100%);
   top: rem(60);
+  transition: transform 0.225s ease;
+  z-index: 2;
+  -webkit-transform: translateZ(0) translateX(-100%);
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
 
   @include breakpoint(md) {
     transform: none;
     top: 0;
     width: rem(280);
+  }
+
+  &.is-open {
+    transform: translateX(0);
   }
 
   &-header {

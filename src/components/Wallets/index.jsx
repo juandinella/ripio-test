@@ -1,12 +1,12 @@
 import React from 'react';
 import Button from '../Button'
 import SVG from 'react-svg-inline';
-import ars from '../Icons/ars.svg'
-import btc from '../Icons/btc.svg'
-import eth from '../Icons/eth.svg'
-import usdc from '../Icons/usdc.svg'
-import dai from '../Icons/dai.svg'
-import ltc from '../Icons/ltc.svg'
+import ars from '../../assets/Icons/ars.svg'
+import btc from '../../assets/Icons/btc.svg'
+import eth from '../../assets/Icons/eth.svg'
+import usdc from '../../assets/Icons/usdc.svg'
+import dai from '../../assets/Icons/dai.svg'
+import ltc from '../../assets/Icons/ltc.svg'
 
 import './index.scss';
 

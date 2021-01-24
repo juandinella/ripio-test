@@ -47,10 +47,11 @@
     font-weight: var(--f-medium);
     font-size: rem(24);
     line-height: rem(28);
+    margin-top: rem(4);
   }
 
   &_ticker {
-    margin-bottom: rem(13);
+    margin-left: rem(6);
 
     span {
       font-size: rem(16);

@@ -6,6 +6,7 @@ import Wallets from "../Wallets";
 
 const Main = () => {
   const [ rates, setRates ] = useState([]);
+  const TICKERS_TO_DISPLAY = ['BTC_ARS', 'USDC_ARS', 'DAI_ARS', 'ETH_ARS'];
 
   useEffect(() => {
     fetch('https://dapp.ripio.com/api/v3/rates/?country=AR')
@@ -17,9 +18,11 @@ const Main = () => {
   return (
     <main className="main">
       <Rates>
-        {rates.map(item =>
-          <RateCard key={item.ticker} {...item}/>
-        )}
+        {rates
+          .filter(item => TICKERS_TO_DISPLAY.includes(item.ticker))
+          .map(item =>
+            <RateCard key={item.ticker} {...item}/>
+          )}
       </Rates>
       <Wallets />
 

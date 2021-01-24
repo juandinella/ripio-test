@@ -4,12 +4,22 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import './assets/styles/App.scss'
 
-const App = () => (
-  <div className='app'>
-    <Sidebar/>
-    <Header/>
-    <Main />
-  </div>
-);
+// agregar el estado acá
+
+const App = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleOpenMenu = () => (
+    setOpenMenu(!openMenu)
+  )
+
+  return (
+    <div className='app'>
+      <Sidebar openMenu={openMenu} onClickOpenMenu={handleOpenMenu}/>
+      <Header openMenu={openMenu} onClickOpenMenu={handleOpenMenu}/>
+      <Main />
+    </div>
+  )
+};
 
 export default App

@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.scss';
+import classNames from "classnames"
 import Button from '../Button'
 import SVG from 'react-svg-inline';
-import bell from '../Icons/bell.svg';
-import help from '../Icons/help.svg';
+import bell from '../../assets/Icons/bell.svg';
+import help from '../../assets/Icons/help.svg';
 
-const Header = () => {
-  const [condition, setCondition] = useState(false);
-
+const Header = ({ openMenu, onClickOpenMenu }) => {
   return (
     <header className="header">
       <div className="header-top flex justify-between">
         <div className='flex align-center'>
-          <button className={condition ? "menu-toggle db dn-md is-open" : "menu-toggle db dn-md"} onClick={() => setCondition(!condition)} >
+          <button
+            className={classNames('menu-toggle db dn-md', openMenu ? 'is-open': '')}
+            onClick={onClickOpenMenu}
+          >
             <div className="menu-toggle_line"></div>
             <div className="menu-toggle_line"></div>
             <div className="menu-toggle_line"></div>
