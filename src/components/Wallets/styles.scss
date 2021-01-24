@@ -118,41 +118,43 @@
 }
 
 .wallet-currency {
-  width: 100%;
+  max-width: 100%;
 
   @include breakpoint(sm) {
-    width: 25%;
+    max-width: 25%;
   }
 }
 
 .wallet-balance {
-  width: 100%;
+  max-width: 100%;
+
   @include breakpoint(sm) {
-    width: 16%;
+    max-width: 16%;
   }
 }
 
 .wallet-equivalent {
-  width: 100%;
+  max-width: 100%;
+
   @include breakpoint(sm) {
-    width: 16%;
+    max-width: 16%;
   }
 }
 
 .wallet-percentage {
-  width: 100%;
+  max-width: 100%;
 
   @include breakpoint(sm) {
-    width: 16%;
+    max-width: 16%;
   }
 }
 
 .wallet-action {
-  width: 100%;
+  max-width: 100%;
   margin-top: rem(25);
 
   @include breakpoint(sm) {
-    width: rem(146);
+    max-width: rem(146);
     margin-top: 0;
   }
 
