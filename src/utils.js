@@ -3,7 +3,6 @@ import usdc from './assets/Icons/usdc-small.svg'
 import dai from './assets/Icons/dai-small.svg'
 import eth from './assets/Icons/eth-small.svg'
 
-
 export const tickerToLogo = {
   'BTC_ARS': btc,
   'USDC_ARS': usdc,

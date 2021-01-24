@@ -66,11 +66,9 @@
 
     .wallet-equivalent {
       text-align: left;
-      padding-right: 0;
 
       @include breakpoint(sm) {
         text-align: right;
-        padding-right: 8%;
       }
     }
 
