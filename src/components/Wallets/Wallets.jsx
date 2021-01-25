@@ -9,6 +9,10 @@ import dai from '../../assets/Icons/dai.svg'
 import ltc from '../../assets/Icons/ltc.svg'
 import './styles.scss';
 
+// Se que esto no es lo mas óptimo y que se podria
+// hacer un componente por cada row y pasarle los elementos por props
+// pero es domíngo
+
 const Wallets = () => (
   <div className='wallets'>
     <h2>Billeteras</h2>
